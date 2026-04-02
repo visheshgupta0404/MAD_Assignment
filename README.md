@@ -73,7 +73,7 @@ MAD_Assignment/
 ✔ Proximity Sensor
 
 <div align="center">
-<img src="./SendorApp/SendorAppUI.jpeg" width="250"/>
+<img src="./SensorApp/SensorAppUI.jpeg" width="250"/>
 </div>
 
 ---
@@ -97,7 +97,7 @@ MAD_Assignment/
 
 <img src="./CurrencyConverter/CurrencyConverterUI.jpeg" width="200"/>
 <img src="./MediaPlayerApp/MediaPlayerAppUI.jpeg" width="200"/>
-<img src="./SendorApp/SendorAppUI.jpeg" width="200"/>
+<img src="./SensorApp/SensorAppUI.jpeg" width="200"/>
 <img src="./PhotoGalleryApp/PhotoGalleryAppUI.jpeg" width="200"/>
 
 </div>
