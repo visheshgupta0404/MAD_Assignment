@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Launcher foreground: currency exchange symbol -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+  <!-- White circle background inset -->
+  <path android:fillColor="#FFFFFF"
+        android:pathData="M54,54 m-36,0 a36,36 0 1,0 72,0 a36,36 0 1,0 -72,0"/>
+  <!-- Dollar/rupee symbol simplified -->
+  <path android:fillColor="#2E7D32"
+        android:pathData="M54,32 L54,76 M44,42 Q54,36 64,42 Q74,48 64,54 Q54,60 64,66 Q74,72 54,76"/>
+</vector>

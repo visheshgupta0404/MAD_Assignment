@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- flag_jp.xml — Japan: white with red circle -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="42dp"
+    android:height="42dp"
+    android:viewportWidth="42"
+    android:viewportHeight="42">
+  <path android:fillColor="#FFFFFF" android:pathData="M0,0 L42,0 L42,42 L0,42 Z"/>
+  <path android:fillColor="#BC002D"
+        android:pathData="M21,21 m-10,0 a10,10 0 1,0 20,0 a10,10 0 1,0 -20,0"/>
+</vector>

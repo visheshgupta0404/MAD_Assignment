@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    strings.xml
+    Contains all the user-facing text for the Photo Gallery application.
+    Centralizing text here allows for easier maintenance and future localization.
+-->
+<resources>
+    <string name="app_name">Photo Gallery</string>
+
+    <!-- Main Screen -->
+    <string name="btn_take_photo">Take Photo</string>
+    <string name="btn_choose_folder">Choose Folder</string>
+    <string name="btn_view_gallery">View Gallery</string>
+    <string name="desc_app_icon">App Icon</string>
+
+    <!-- Gallery Screen -->
+    <string name="no_images_message">No images found in this folder</string>
+    <string name="title_gallery">Photo Gallery</string>
+    <string name="desc_folder_icon">Folder Icon</string>
+    <string name="desc_no_images">No Images</string>
+
+    <!-- Image Detail Screen -->
+    <string name="title_image_details">Image Details</string>
+    <string name="label_image_name">Name: %1$s</string>
+    <string name="label_image_path">Path: %1$s</string>
+    <string name="label_image_size">Size: %1$s</string>
+    <string name="label_image_date">Date Taken: %1$s</string>
+    <string name="btn_delete">🗑️  Delete Image</string>
+    <string name="desc_photo_thumbnail">Photo Thumbnail</string>
+
+    <!-- Delete Confirmation Dialog -->
+    <string name="dialog_delete_title">Delete Image</string>
+    <string name="dialog_delete_message">Are you sure you want to permanently delete\n\"%1$s\"?</string>
+    <string name="dialog_confirm">Delete</string>
+    <string name="dialog_cancel">Cancel</string>
+
+    <!-- Toasts and Feedback -->
+    <string name="delete_success">Image deleted successfully.</string>
+    <string name="delete_failure">Failed to delete image. It might be protected or already removed.</string>
+    <string name="image_not_found">Image file not found.</string>
+    <string name="image_path_not_provided">Image path not provided.</string>
+    <string name="could_not_load_image">Could not load image.</string>
+
+    <!-- Permission Messages -->
+    <string name="permission_camera">Camera permission is required to take photos.</string>
+    <string name="permission_storage">Storage permission is required to save and view photos.</string>
+</resources>

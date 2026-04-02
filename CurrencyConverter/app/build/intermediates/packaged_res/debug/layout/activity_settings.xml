@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    activity_settings.xml
+    Settings page with toolbar + a card containing the Dark/Light toggle switch
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/colorBackground">
+
+    <!-- ── Toolbar ── -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorSurface"
+        android:elevation="4dp"
+        app:title="Settings"
+        app:titleTextColor="?attr/colorOnSurface"
+        app:titleTextAppearance="@style/ToolbarTitleStyle" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?attr/colorOutline"
+        android:alpha="0.2" />
+
+    <!-- ── Section title ── -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="APPEARANCE"
+        android:textSize="11sp"
+        android:textColor="@color/green_primary"
+        android:letterSpacing="0.12"
+        android:textStyle="bold"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="24dp"
+        android:paddingBottom="8dp" />
+
+    <!-- ── Theme toggle card ── -->
+    <androidx.cardview.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        app:cardCornerRadius="14dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="?attr/colorSurface">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="18dp">
+
+            <!-- Moon icon -->
+            <TextView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:text="🌙"
+                android:textSize="20sp"
+                android:gravity="center" />
+
+            <!-- Label -->
+            <TextView
+                android:id="@+id/themeLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorOnSurface"
+                android:layout_marginStart="12dp"
+                android:text="Dark Mode" />
+
+            <!-- Toggle switch styled with green thumb -->
+            <Switch
+                android:id="@+id/themeSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:thumbTint="@color/green_primary"
+                android:trackTint="@color/switch_track_selector" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- ── Info text ── -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Toggle between Dark and Light theme. The app will update immediately."
+        android:textSize="12sp"
+        android:textColor="?attr/colorOnSurfaceVariant"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="10dp"
+        android:lineSpacingMultiplier="1.4" />
+
+</LinearLayout>

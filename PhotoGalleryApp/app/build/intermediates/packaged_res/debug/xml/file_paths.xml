@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    file_paths.xml
+    Configuration for FileProvider to securely share file URIs.
+    This is required for Android 7.0+ when passing file URIs to the camera app.
+-->
+<paths>
+    <!-- Temporary cache for captured photos -->
+    <cache-path
+        name="camera_temp"
+        path="." />
+
+    <!-- Root of external storage for final saved images -->
+    <external-path
+        name="external_storage"
+        path="." />
+
+    <!-- App-specific external files -->
+    <external-files-path
+        name="external_files"
+        path="." />
+</paths>

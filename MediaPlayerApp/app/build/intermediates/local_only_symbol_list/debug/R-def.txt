@@ -1,0 +1,23 @@
+R_DEF: Internal format may change without notice
+local
+color ic_launcher_background
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id audioPanel
+id btnOpenFile
+id btnOpenUrl
+id btnPause
+id btnPlay
+id btnRestart
+id btnStop
+id seekBar
+id tvCurrentTime
+id tvStatus
+id tvTotalTime
+id videoPanel
+id videoView
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Theme.MediaPlayer

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    values-night/themes.xml
+    Dark mode theme configuration for the application.
+    Android automatically switches to this theme when the device's dark mode is enabled.
+-->
+<resources>
+    <style name="Theme.PhotoGallery" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Brand colors remain consistent or shift slightly for better contrast in dark mode -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/text_on_primary</item>
+
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/secondary</item>
+        <item name="colorOnSecondary">@color/text_on_primary</item>
+
+        <item name="android:statusBarColor">@color/primary_dark</item>
+    </style>
+</resources>

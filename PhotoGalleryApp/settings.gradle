@@ -1,0 +1,27 @@
+// settings.gradle
+// Defines the project structure and repository sources for dependency resolution.
+
+pluginManagement {
+    repositories {
+        // Android plugin and other Google plugins
+        google()
+        // Gradle plugin portal
+        gradlePluginPortal()
+        // Maven Central for open-source libraries
+        mavenCentral()
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+// The root project name (shown in Android Studio)
+rootProject.name = "PhotoGalleryApp"
+
+// Includes the :app module
+include ':app'

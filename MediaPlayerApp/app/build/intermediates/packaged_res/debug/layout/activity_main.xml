@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Activity Main Layout:
+    Uses a ScrollView to ensure the UI remains accessible on smaller screens or in landscape mode.
+    The root layout is a vertical LinearLayout containing all player components.
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header Section: Displays App Title and Current Media Status -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Media Hub"
+            android:textColor="#212121"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="start"
+            android:paddingTop="12dp"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ready"
+            android:textColor="#757575"
+            android:textSize="12sp"
+            android:gravity="start"
+            android:paddingBottom="16dp" />
+
+        <!-- Media Source Selection: Buttons for picking a local file or streaming from a URL -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnOpenFile"
+                android:layout_width="0dp"
+                android:layout_height="54dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="Import File"
+                android:textAllCaps="false"
+                android:backgroundTint="#3F51B5"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnOpenUrl"
+                android:layout_width="0dp"
+                android:layout_height="54dp"
+                android:layout_weight="1"
+                android:text="Stream URL"
+                android:textAllCaps="false"
+                android:backgroundTint="#3F51B5"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Media Display Area: CardView containing the VideoView and Audio Panel -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_marginTop="24dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#000000">
+
+            <!-- Panel shown during Audio playback -->
+            <LinearLayout
+                android:id="@+id/audioPanel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Audio Streaming Active"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Panel shown during Video playback -->
+            <LinearLayout
+                android:id="@+id/videoPanel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <VideoView
+                    android:id="@+id/videoView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Playback Progress: SeekBar and time labels (current and total) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="24dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvCurrentTime"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textColor="#616161"
+                android:textSize="11sp" />
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:progressTint="#3F51B5"
+                android:thumbTint="#3F51B5"
+                android:enabled="false" />
+
+            <TextView
+                android:id="@+id/tvTotalTime"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textColor="#616161"
+                android:textSize="11sp"
+                android:gravity="end" />
+        </LinearLayout>
+
+        <!-- Playback Controls: Primary buttons (Play, Pause) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="24dp">
+
+            <Button
+                android:id="@+id/btnPlay"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="Play"
+                android:textAllCaps="false"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF"
+                android:enabled="false" />
+
+            <Button
+                android:id="@+id/btnPause"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="Pause"
+                android:textAllCaps="false"
+                android:backgroundTint="#FF9800"
+                android:textColor="#FFFFFF"
+                android:enabled="false" />
+        </LinearLayout>
+
+        <!-- Secondary Playback Controls: Buttons for Stop and Restart -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp">
+
+            <Button
+                android:id="@+id/btnStop"
+                android:layout_width="0dp"
+                android:layout_height="54dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="Stop"
+                android:textAllCaps="false"
+                android:backgroundTint="#F44336"
+                android:textColor="#FFFFFF"
+                android:enabled="false" />
+
+            <Button
+                android:id="@+id/btnRestart"
+                android:layout_width="0dp"
+                android:layout_height="54dp"
+                android:layout_weight="1"
+                android:text="Restart"
+                android:textAllCaps="false"
+                android:backgroundTint="#757575"
+                android:textColor="#FFFFFF"
+                android:enabled="false" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

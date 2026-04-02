@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    AndroidManifest.xml  –  Q3: Sensor Monitor
+    Sensor access on Android does NOT require runtime permissions.
+    We declare optional hardware features so the app is not filtered
+    from devices that have at least some of these sensors.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sensorapp">
+
+    <!-- Declare optional sensor features (android:required="false" ensures
+         the app is still installable on devices without all three sensors) -->
+    <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="false" />
+    <uses-feature android:name="android.hardware.sensor.light"         android:required="false" />
+    <uses-feature android:name="android.hardware.sensor.proximity"     android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@android:drawable/sym_def_app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SensorApp">
+
+        <!-- MainActivity is the sole Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

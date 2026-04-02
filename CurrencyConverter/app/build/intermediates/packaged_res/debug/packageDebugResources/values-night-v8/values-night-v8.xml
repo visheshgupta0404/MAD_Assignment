@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.CurrencyConverter" parent="Theme.Material3.Dark.NoActionBar">
+
+        
+        <item name="android:windowSplashScreenAnimatedIcon">@null</item>
+        <item name="android:windowSplashScreenBackground">#FFFFFF</item>
+        <item name="android:windowSplashScreenAnimationDuration">0</item>
+
+        
+        <item name="colorPrimary">@color/green_primary</item>
+        <item name="colorPrimaryVariant">@color/green_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        
+        <item name="android:colorBackground">#121212</item>
+        <item name="colorSurface">#1C251D</item>
+        <item name="colorOnSurface">#E8F0E9</item>
+        <item name="colorOnSurfaceVariant">#8FA890</item>
+        <item name="colorOutline">#2E3D2F</item>
+
+        
+        <item name="android:statusBarColor">#0F1610</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+    </style>
+</resources>

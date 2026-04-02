@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    themes.xml  (res/values/themes.xml)
+    BASE theme — used in Light Mode
+    Forest Green accent with clean white surfaces
+-->
+<resources>
+
+    <style name="Theme.CurrencyConverter" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Green primary brand color -->
+        <item name="colorPrimary">@color/green_primary</item>
+        <item name="colorPrimaryVariant">@color/green_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Backgrounds -->
+        <item name="android:colorBackground">#FFFFFF</item>
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="colorOnSurface">#1A1A1A</item>
+        <item name="colorOnSurfaceVariant">#6B6B6B</item>
+        <item name="colorOutline">#CCCCCC</item>
+
+        <!-- Status bar -->
+        <item name="android:statusBarColor">@color/green_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+    </style>
+
+    <!-- ToolbarTitle style -->
+    <style name="ToolbarTitleStyle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--
+        Permissions required for the application.
+        - CAMERA: To take photos using the device camera.
+        - WRITE_EXTERNAL_STORAGE: To save photos on Android 10 (API 29) and below.
+        - READ_EXTERNAL_STORAGE: To browse photos on Android 12 (API 32) and below.
+        - READ_MEDIA_IMAGES: To browse photos on Android 13 (API 33) and above.
+        - MANAGE_EXTERNAL_STORAGE: To perform full file operations like deleting any image on Android 11+.
+    -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="29" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_IMAGES"
+        tools:ignore="SelectivePermissionGranted" />
+
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <!--
+        Declare that the app uses the camera hardware.
+        required="false" allows the app to be installed on devices without a camera,
+        though its primary feature won't work.
+    -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PhotoGallery"
+        android:requestLegacyExternalStorage="true">
+
+        <!--
+            The main entry point of the app.
+            Displayed in the launcher.
+        -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Gallery view activity -->
+        <activity android:name=".GalleryActivity" android:exported="false" />
+
+        <!-- Detailed view for a single image -->
+        <activity android:name=".ImageDetailActivity" android:exported="false" />
+
+        <!--
+            FileProvider is used to securely share file URIs with other apps,
+            specifically the system camera app for saving captured photos.
+        -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
+</manifest>

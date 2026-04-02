@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accentAmber">#E65100</color>
+    <color name="accentBlue">#1565C0</color>
+    <color name="axisX">#D32F2F</color>
+    <color name="axisY">#388E3C</color>
+    <color name="axisZ">#1565C0</color>
+    <color name="background">#F1F8F7</color>
+    <color name="badgeAmber">#F9A825</color>
+    <color name="badgeBlue">#1565C0</color>
+    <color name="badgeTeal">#00695C</color>
+    <color name="cardBackground">#FFFFFF</color>
+    <color name="colorAccent">#F9A825</color>
+    <color name="divider">#CFE4E2</color>
+    <color name="liveDot">#43A047</color>
+    <color name="primary">#00695C</color>
+    <color name="primaryDark">#004D40</color>
+    <color name="primaryLight">#80CBC4</color>
+    <color name="primaryText">#1B2B2A</color>
+    <color name="secondaryText">#607D7B</color>
+    <color name="sensorActive">#00695C</color>
+    <color name="sensorUnavailable">#B71C1C</color>
+    <color name="statusBg">#E0F2F1</color>
+    <color name="white">#FFFFFF</color>
+    <string name="app_name">Sensor Monitor</string>
+    <string name="desc_accel_icon">Accelerometer icon</string>
+    <string name="desc_light_icon">Light sensor icon</string>
+    <string name="desc_prox_icon">Proximity sensor icon</string>
+    <string name="label_accelerometer">Accelerometer</string>
+    <string name="label_ambient_light">Ambient light level</string>
+    <string name="label_light">Light Sensor</string>
+    <string name="label_object_distance">Object distance</string>
+    <string name="label_proximity">Proximity Sensor</string>
+    <string name="status_waiting">Waiting for data…</string>
+    <string name="toolbar_subtitle">Live device sensor readings</string>
+    <string name="type_accelerometer">TYPE_ACCELEROMETER</string>
+    <string name="type_light">TYPE_LIGHT</string>
+    <string name="type_proximity">TYPE_PROXIMITY</string>
+    <string name="value_default_cm">— cm</string>
+    <string name="value_default_lux">— lux</string>
+    <string name="value_waiting">Waiting…</string>
+    <style name="Theme.SensorApp" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:statusBarColor">@color/primaryDark</item>
+    </style>
+</resources>

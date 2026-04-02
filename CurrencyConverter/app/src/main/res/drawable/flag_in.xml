@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- flag_in.xml — India flag placeholder: saffron/white/green tricolor circle -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="42dp"
+    android:height="42dp"
+    android:viewportWidth="42"
+    android:viewportHeight="42">
+  <!-- Saffron top third -->
+  <path android:fillColor="#FF9933"
+        android:pathData="M0,0 Q21,-4 42,0 L42,14 L0,14 Z"/>
+  <!-- White middle third -->
+  <path android:fillColor="#FFFFFF"
+        android:pathData="M0,14 L42,14 L42,28 L0,28 Z"/>
+  <!-- Green bottom third -->
+  <path android:fillColor="#138808"
+        android:pathData="M0,28 L42,28 L42,42 Q21,46 0,42 Z"/>
+  <!-- Ashoka chakra (simple blue circle) -->
+  <path android:fillColor="#000080"
+        android:pathData="M21,21 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0"/>
+  <path android:fillColor="#FFFFFF"
+        android:pathData="M21,21 m-2.5,0 a2.5,2.5 0 1,0 5,0 a2.5,2.5 0 1,0 -5,0"/>
+</vector>

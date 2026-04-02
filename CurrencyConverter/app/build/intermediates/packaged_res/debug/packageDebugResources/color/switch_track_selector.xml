@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- switch_track_selector.xml — green when ON, gray when OFF -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true"  android:color="#A5D6A7" /> <!-- green light -->
+    <item android:state_checked="false" android:color="#BDBDBD" /> <!-- gray -->
+</selector>

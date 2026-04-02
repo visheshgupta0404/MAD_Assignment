@@ -1,0 +1,102 @@
+[
+    {
+        "merged": "com.assignment.currencyconverter.app-debug-32:/drawable_flag_jp.xml.flat",
+        "source": "com.assignment.currencyconverter.app-main-34:/drawable/flag_jp.xml"
+    },
+    {
+        "merged": "com.assignment.currencyconverter.app-debug-32:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.assignment.currencyconverter.app-main-34:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.assignment.currencyconverter.app-debug-32:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.assignment.currencyconverter.app-main-34:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.assignment.currencyconverter.app-debug-32:/drawable_flag_circle_bg.xml.flat",
+        "source": "com.assignment.currencyconverter.app-main-34:/drawable/flag_circle_bg.xml"
+    },
+    {
+        "merged": "com.assignment.currencyconverter.app-debug-32:/drawable_ic_settings.xml.flat",
+        "source": "com.assignment.currencyconverter.app-main-34:/drawable/ic_settings.xml"
+    },
+    {
+        "merged": "com.assignment.currencyconverter.app-debug-32:/menu_main_menu.xml.flat",
+        "source": "com.assignment.currencyconverter.app-main-34:/menu/main_menu.xml"
+    },
+    {
+        "merged": "com.assignment.currencyconverter.app-debug-32:/layout_item_currency.xml.flat",
+        "source": "com.assignment.currencyconverter.app-main-34:/layout/item_currency.xml"
+    },
+    {
+        "merged": "com.assignment.currencyconverter.app-debug-32:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.assignment.currencyconverter.app-main-34:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.assignment.currencyconverter.app-debug-32:/layout_activity_main.xml.flat",
+        "source": "com.assignment.currencyconverter.app-main-34:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.assignment.currencyconverter.app-debug-32:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.assignment.currencyconverter.app-main-34:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.assignment.currencyconverter.app-debug-32:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.assignment.currencyconverter.app-main-34:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.assignment.currencyconverter.app-debug-32:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.assignment.currencyconverter.app-main-34:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.assignment.currencyconverter.app-debug-32:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.assignment.currencyconverter.app-main-34:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.assignment.currencyconverter.app-debug-32:/layout_activity_settings.xml.flat",
+        "source": "com.assignment.currencyconverter.app-main-34:/layout/activity_settings.xml"
+    },
+    {
+        "merged": "com.assignment.currencyconverter.app-debug-32:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.assignment.currencyconverter.app-main-34:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.assignment.currencyconverter.app-debug-32:/color_switch_track_selector.xml.flat",
+        "source": "com.assignment.currencyconverter.app-main-34:/color/switch_track_selector.xml"
+    },
+    {
+        "merged": "com.assignment.currencyconverter.app-debug-32:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.assignment.currencyconverter.app-main-34:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.assignment.currencyconverter.app-debug-32:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.assignment.currencyconverter.app-main-34:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.assignment.currencyconverter.app-debug-32:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.assignment.currencyconverter.app-main-34:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.assignment.currencyconverter.app-debug-32:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.assignment.currencyconverter.app-main-34:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.assignment.currencyconverter.app-debug-32:/drawable_flag_in.xml.flat",
+        "source": "com.assignment.currencyconverter.app-main-34:/drawable/flag_in.xml"
+    },
+    {
+        "merged": "com.assignment.currencyconverter.app-debug-32:/drawable_flag_eu.xml.flat",
+        "source": "com.assignment.currencyconverter.app-main-34:/drawable/flag_eu.xml"
+    },
+    {
+        "merged": "com.assignment.currencyconverter.app-debug-32:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.assignment.currencyconverter.app-main-34:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.assignment.currencyconverter.app-debug-32:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.assignment.currencyconverter.app-main-34:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.assignment.currencyconverter.app-debug-32:/drawable_flag_us.xml.flat",
+        "source": "com.assignment.currencyconverter.app-main-34:/drawable/flag_us.xml"
+    }
+]

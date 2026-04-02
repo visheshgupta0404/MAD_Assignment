@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    colors.xml
+    Defines the color palette for the application.
+    Unnecessary legacy colors have been removed to keep the project clean.
+-->
+<resources>
+    <!-- Primary brand colors -->
+    <color name="primary">#E64A19</color>       <!-- Deep Orange 700 -->
+    <color name="primary_dark">#BF360C</color>  <!-- Deep Orange 900 -->
+    <color name="secondary">#455A64</color>     <!-- Blue Grey 700 -->
+    <color name="accent">#FFB300</color>        <!-- Amber 600 -->
+
+    <!-- Semantic colors -->
+    <color name="error">#C62828</color>         <!-- Red 800 -->
+
+    <!-- Background and Surface colors -->
+    <color name="background">#FAFAFA</color>    <!-- Grey 50 -->
+    <color name="grid_cell_bg">#CFD8DC</color>  <!-- Blue Grey 100 -->
+    <color name="surface">#FFFFFF</color>
+
+    <!-- Text colors -->
+    <color name="text_primary">#263238</color>   <!-- Blue Grey 900 -->
+    <color name="text_secondary">#546E7A</color> <!-- Blue Grey 600 -->
+    <color name="text_on_primary">#FFFFFF</color>
+
+    <!-- UI Decorators -->
+    <color name="divider">#B0BEC5</color>
+
+    <!-- Common colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

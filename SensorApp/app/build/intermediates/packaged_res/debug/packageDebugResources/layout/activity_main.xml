@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    activity_main.xml
+    Main dashboard for the Sensor Monitor application.
+    Displays Accelerometer, Light, and Proximity sensor data in styled cards.
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <!-- App Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary"
+        android:elevation="4dp"
+        app:title="@string/app_name"
+        app:titleTextColor="@color/white"
+        app:subtitleTextColor="@color/primaryLight"
+        app:subtitle="@string/toolbar_subtitle" />
+
+    <!-- Main Content Area -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:clipToPadding="false"
+        android:paddingBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Accelerometer Card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardAccelerometer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="@color/cardBackground"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="16dp">
+
+                        <FrameLayout
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:background="@drawable/icon_badge_bg_teal"
+                            android:layout_marginEnd="14dp">
+                            <ImageView
+                                android:layout_width="26dp"
+                                android:layout_height="26dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_accelerometer"
+                                android:contentDescription="@string/desc_accel_icon"
+                                app:tint="@color/white" />
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/label_accelerometer"
+                                android:textSize="17sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/primaryText" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/type_accelerometer"
+                                android:textSize="11sp"
+                                android:textColor="@color/secondaryText"
+                                android:fontFamily="monospace" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:background="@drawable/dot_live"
+                            android:layout_marginStart="8dp" />
+
+                    </LinearLayout>
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp"
+                        android:background="@color/divider" android:layout_marginBottom="14dp" />
+
+                    <!-- Axis Readings -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="10dp">
+                        <TextView
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:text="X"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/axisX" />
+                        <TextView
+                            android:id="@+id/tvAccelX"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/value_waiting"
+                            android:textSize="16sp"
+                            android:textColor="@color/primaryText"
+                            android:fontFamily="monospace" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="10dp">
+                        <TextView
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:text="Y"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/axisY" />
+                        <TextView
+                            android:id="@+id/tvAccelY"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/value_waiting"
+                            android:textSize="16sp"
+                            android:textColor="@color/primaryText"
+                            android:fontFamily="monospace" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="14dp">
+                        <TextView
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:text="Z"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/axisZ" />
+                        <TextView
+                            android:id="@+id/tvAccelZ"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/value_waiting"
+                            android:textSize="16sp"
+                            android:textColor="@color/primaryText"
+                            android:fontFamily="monospace" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvAccelStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/status_waiting"
+                        android:textSize="12sp"
+                        android:textColor="@color/sensorActive"
+                        android:background="@drawable/status_bg"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="6dp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Light Sensor Card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardLight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="@color/cardBackground"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="16dp">
+
+                        <FrameLayout
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:background="@drawable/icon_badge_bg_amber"
+                            android:layout_marginEnd="14dp">
+                            <ImageView
+                                android:layout_width="26dp"
+                                android:layout_height="26dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_light"
+                                android:contentDescription="@string/desc_light_icon"
+                                app:tint="@color/white" />
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/label_light"
+                                android:textSize="17sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/primaryText" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/type_light"
+                                android:textSize="11sp"
+                                android:textColor="@color/secondaryText"
+                                android:fontFamily="monospace" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:background="@drawable/dot_live"
+                            android:layout_marginStart="8dp" />
+
+                    </LinearLayout>
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp"
+                        android:background="@color/divider" android:layout_marginBottom="14dp" />
+
+                    <TextView
+                        android:id="@+id/tvLightValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/value_default_lux"
+                        android:textSize="36sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/accentAmber"
+                        android:fontFamily="monospace"
+                        android:layout_marginBottom="6dp" />
+
+                    <TextView
+                        android:id="@+id/tvLightLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_ambient_light"
+                        android:textSize="14sp"
+                        android:textColor="@color/secondaryText"
+                        android:layout_marginBottom="14dp" />
+
+                    <TextView
+                        android:id="@+id/tvLightStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/status_waiting"
+                        android:textSize="12sp"
+                        android:textColor="@color/sensorActive"
+                        android:background="@drawable/status_bg"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="6dp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Proximity Sensor Card -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardProximity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="@color/cardBackground"
+                android:layout_marginBottom="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="16dp">
+
+                        <FrameLayout
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:background="@drawable/icon_badge_bg_blue"
+                            android:layout_marginEnd="14dp">
+                            <ImageView
+                                android:layout_width="26dp"
+                                android:layout_height="26dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_proximity"
+                                android:contentDescription="@string/desc_prox_icon"
+                                app:tint="@color/white" />
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/label_proximity"
+                                android:textSize="17sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/primaryText" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/type_proximity"
+                                android:textSize="11sp"
+                                android:textColor="@color/secondaryText"
+                                android:fontFamily="monospace" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:background="@drawable/dot_live"
+                            android:layout_marginStart="8dp" />
+
+                    </LinearLayout>
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp"
+                        android:background="@color/divider" android:layout_marginBottom="14dp" />
+
+                    <TextView
+                        android:id="@+id/tvProximityValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/value_default_cm"
+                        android:textSize="36sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/accentBlue"
+                        android:fontFamily="monospace"
+                        android:layout_marginBottom="6dp" />
+
+                    <TextView
+                        android:id="@+id/tvProximityLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_object_distance"
+                        android:textSize="14sp"
+                        android:textColor="@color/secondaryText"
+                        android:layout_marginBottom="14dp" />
+
+                    <TextView
+                        android:id="@+id/tvProximityStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/status_waiting"
+                        android:textSize="12sp"
+                        android:textColor="@color/sensorActive"
+                        android:background="@drawable/status_bg"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="6dp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

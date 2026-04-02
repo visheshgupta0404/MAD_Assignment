@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent">#FFB300</color>
+    <color name="background">#FAFAFA</color>
+    <color name="black">#FF000000</color>
+    <color name="divider">#B0BEC5</color>
+    <color name="error">#C62828</color>
+    <color name="grid_cell_bg">#CFD8DC</color>
+    <color name="primary">#E64A19</color>
+    <color name="primary_dark">#BF360C</color>
+    <color name="secondary">#455A64</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="text_on_primary">#FFFFFF</color>
+    <color name="text_primary">#263238</color>
+    <color name="text_secondary">#546E7A</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">Photo Gallery</string>
+    <string name="btn_choose_folder">Choose Folder</string>
+    <string name="btn_delete">🗑️  Delete Image</string>
+    <string name="btn_take_photo">Take Photo</string>
+    <string name="btn_view_gallery">View Gallery</string>
+    <string name="could_not_load_image">Could not load image.</string>
+    <string name="delete_failure">Failed to delete image. It might be protected or already removed.</string>
+    <string name="delete_success">Image deleted successfully.</string>
+    <string name="desc_app_icon">App Icon</string>
+    <string name="desc_folder_icon">Folder Icon</string>
+    <string name="desc_no_images">No Images</string>
+    <string name="desc_photo_thumbnail">Photo Thumbnail</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_confirm">Delete</string>
+    <string name="dialog_delete_message">Are you sure you want to permanently delete\n\"%1$s\"?</string>
+    <string name="dialog_delete_title">Delete Image</string>
+    <string name="image_not_found">Image file not found.</string>
+    <string name="image_path_not_provided">Image path not provided.</string>
+    <string name="label_image_date">Date Taken: %1$s</string>
+    <string name="label_image_name">Name: %1$s</string>
+    <string name="label_image_path">Path: %1$s</string>
+    <string name="label_image_size">Size: %1$s</string>
+    <string name="no_images_message">No images found in this folder</string>
+    <string name="permission_camera">Camera permission is required to take photos.</string>
+    <string name="permission_storage">Storage permission is required to save and view photos.</string>
+    <string name="title_gallery">Photo Gallery</string>
+    <string name="title_image_details">Image Details</string>
+    <style name="Theme.PhotoGallery" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/text_on_primary</item>
+
+        
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/secondary</item>
+        <item name="colorOnSecondary">@color/text_on_primary</item>
+
+        
+        <item name="android:statusBarColor">@color/primary_dark</item>
+
+        
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+    <style name="Theme.PhotoGallery.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>

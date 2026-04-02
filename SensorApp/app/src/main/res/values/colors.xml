@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    colors.xml
+    Defines the color palette for the Sensor Monitor application.
+    Theme: Deep Teal / Emerald Green
+-->
+<resources>
+    <!-- Brand Colors -->
+    <color name="primary">#00695C</color>
+    <color name="primaryDark">#004D40</color>
+    <color name="primaryLight">#80CBC4</color>
+    <color name="colorAccent">#F9A825</color>
+
+    <!-- Backgrounds -->
+    <color name="background">#F1F8F7</color>
+    <color name="cardBackground">#FFFFFF</color>
+
+    <!-- Text Colors -->
+    <color name="primaryText">#1B2B2A</color>
+    <color name="secondaryText">#607D7B</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- Sensor Status Indicators -->
+    <color name="sensorActive">#00695C</color>
+    <color name="sensorUnavailable">#B71C1C</color>
+
+    <!-- Accelerometer Axis Colors (X, Y, Z) -->
+    <color name="axisX">#D32F2F</color>   <!-- Red -->
+    <color name="axisY">#388E3C</color>   <!-- Green -->
+    <color name="axisZ">#1565C0</color>   <!-- Blue -->
+
+    <!-- Card Icon Badge Backgrounds -->
+    <color name="badgeTeal">#00695C</color>
+    <color name="badgeAmber">#F9A825</color>
+    <color name="badgeBlue">#1565C0</color>
+
+    <!-- Accent Colors for big numeric readouts -->
+    <color name="accentAmber">#E65100</color>
+    <color name="accentBlue">#1565C0</color>
+
+    <!-- Miscellaneous -->
+    <color name="divider">#CFE4E2</color>
+    <color name="statusBg">#E0F2F1</color>
+    <color name="liveDot">#43A047</color>
+</resources>

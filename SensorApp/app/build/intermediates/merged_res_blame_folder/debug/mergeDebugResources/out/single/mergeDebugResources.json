@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "C:\\Users\\lenovo\\.gradle\\daemon\\9.0.0\\com.example.sensorapp-debug-31:\\drawable_icon_badge_bg_amber.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\daemon\\9.0.0\\com.example.sensorapp-main-33:\\drawable\\icon_badge_bg_amber.xml"
+    },
+    {
+        "merged": "C:\\Users\\lenovo\\.gradle\\daemon\\9.0.0\\com.example.sensorapp-debug-31:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\daemon\\9.0.0\\com.example.sensorapp-main-33:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\lenovo\\.gradle\\daemon\\9.0.0\\com.example.sensorapp-debug-31:\\drawable_icon_badge_bg_teal.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\daemon\\9.0.0\\com.example.sensorapp-main-33:\\drawable\\icon_badge_bg_teal.xml"
+    },
+    {
+        "merged": "C:\\Users\\lenovo\\.gradle\\daemon\\9.0.0\\com.example.sensorapp-debug-31:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\daemon\\9.0.0\\com.example.sensorapp-main-33:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\lenovo\\.gradle\\daemon\\9.0.0\\com.example.sensorapp-debug-31:\\drawable_ic_proximity.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\daemon\\9.0.0\\com.example.sensorapp-main-33:\\drawable\\ic_proximity.xml"
+    },
+    {
+        "merged": "C:\\Users\\lenovo\\.gradle\\daemon\\9.0.0\\com.example.sensorapp-debug-31:\\drawable_ic_light.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\daemon\\9.0.0\\com.example.sensorapp-main-33:\\drawable\\ic_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\lenovo\\.gradle\\daemon\\9.0.0\\com.example.sensorapp-debug-31:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\daemon\\9.0.0\\com.example.sensorapp-main-33:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\lenovo\\.gradle\\daemon\\9.0.0\\com.example.sensorapp-debug-31:\\drawable_ic_accelerometer.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\daemon\\9.0.0\\com.example.sensorapp-main-33:\\drawable\\ic_accelerometer.xml"
+    },
+    {
+        "merged": "C:\\Users\\lenovo\\.gradle\\daemon\\9.0.0\\com.example.sensorapp-debug-31:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\daemon\\9.0.0\\com.example.sensorapp-main-33:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.example.sensorapp-debug-31:/layout_activity_main.xml.flat",
+        "source": "com.example.sensorapp-main-33:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\lenovo\\.gradle\\daemon\\9.0.0\\com.example.sensorapp-debug-31:\\drawable_icon_badge_bg_blue.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\daemon\\9.0.0\\com.example.sensorapp-main-33:\\drawable\\icon_badge_bg_blue.xml"
+    },
+    {
+        "merged": "C:\\Users\\lenovo\\.gradle\\daemon\\9.0.0\\com.example.sensorapp-debug-31:\\drawable_dot_live.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\daemon\\9.0.0\\com.example.sensorapp-main-33:\\drawable\\dot_live.xml"
+    },
+    {
+        "merged": "C:\\Users\\lenovo\\.gradle\\daemon\\9.0.0\\com.example.sensorapp-debug-31:\\drawable_status_bg.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\daemon\\9.0.0\\com.example.sensorapp-main-33:\\drawable\\status_bg.xml"
+    },
+    {
+        "merged": "C:\\Users\\lenovo\\.gradle\\daemon\\9.0.0\\com.example.sensorapp-debug-31:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\daemon\\9.0.0\\com.example.sensorapp-main-33:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    }
+]

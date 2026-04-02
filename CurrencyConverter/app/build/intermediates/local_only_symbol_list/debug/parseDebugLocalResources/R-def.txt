@@ -1,0 +1,36 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color green_dark
+color green_light
+color green_primary
+color ic_launcher_background
+color switch_track_selector
+color white
+drawable flag_circle_bg
+drawable flag_eu
+drawable flag_in
+drawable flag_jp
+drawable flag_us
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable ic_settings
+id action_settings
+id amountEdit
+id codeText
+id flagImage
+id nameText
+id recyclerView
+id themeLabel
+id themeSwitch
+id toolbar
+layout activity_main
+layout activity_settings
+layout item_currency
+menu main_menu
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+string settings
+style Theme.CurrencyConverter
+style ToolbarTitleStyle

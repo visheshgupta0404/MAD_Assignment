@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Application Name -->
+    <string name="app_name">Sensor Monitor</string>
+
+    <!-- Toolbar -->
+    <string name="toolbar_subtitle">Live device sensor readings</string>
+
+    <!-- Sensor Names & Types -->
+    <string name="label_accelerometer">Accelerometer</string>
+    <string name="type_accelerometer">TYPE_ACCELEROMETER</string>
+    <string name="label_light">Light Sensor</string>
+    <string name="type_light">TYPE_LIGHT</string>
+    <string name="label_proximity">Proximity Sensor</string>
+    <string name="type_proximity">TYPE_PROXIMITY</string>
+
+    <!-- Static Labels -->
+    <string name="label_ambient_light">Ambient light level</string>
+    <string name="label_object_distance">Object distance</string>
+
+    <!-- Status & Default Values -->
+    <string name="status_waiting">Waiting for data…</string>
+    <string name="value_waiting">Waiting…</string>
+    <string name="value_default_lux">— lux</string>
+    <string name="value_default_cm">— cm</string>
+
+    <!-- Content Descriptions for Accessibility -->
+    <string name="desc_accel_icon">Accelerometer icon</string>
+    <string name="desc_light_icon">Light sensor icon</string>
+    <string name="desc_prox_icon">Proximity sensor icon</string>
+</resources>

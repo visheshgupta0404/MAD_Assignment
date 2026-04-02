@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="green_dark">#1B5E20</color>
+    <color name="green_light">#4CAF50</color>
+    <color name="green_primary">#2E7D32</color>
+    <color name="ic_launcher_background">#1B5E20</color>
+    <color name="white">#FFFFFF</color>
+    <string name="app_name">Currency Converter</string>
+    <string name="settings">Settings</string>
+    <style name="Theme.CurrencyConverter" parent="Theme.Material3.Light.NoActionBar">
+        
+        <item name="colorPrimary">@color/green_primary</item>
+        <item name="colorPrimaryVariant">@color/green_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        
+        <item name="colorBackground">#F4F6F3</item>
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="colorOnSurface">#1A1A1A</item>
+        <item name="colorOnSurfaceVariant">#6B6B6B</item>
+        <item name="colorOutline">#CCCCCC</item>
+
+        
+        <item name="android:statusBarColor">@color/green_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="ToolbarTitleStyle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+</resources>
