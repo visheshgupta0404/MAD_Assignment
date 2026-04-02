@@ -4,7 +4,7 @@
 
 ## 👨‍💻 Vishesh Gupta
 
-B.Tech CSE (2024–28)
+B.Tech CSE -7  (2024–28)
 
 ### 👨‍🏫 Faculty: Mr. Gautam Gupta
 
@@ -49,7 +49,7 @@ MAD_Assignment/
 ✔ Clean modern UI
 
 <div align="center">
-<img src="./CurrencyConverter/CurrencyConverterUI.jpeg" width="250"/>
+<img src="./CurrencyConverterUI.jpeg" width="250"/>
 </div>
 
 ---
@@ -61,7 +61,7 @@ MAD_Assignment/
 ✔ Controls: Play, Pause, Stop, Restart
 
 <div align="center">
-<img src="./MediaPlayerApp/MediaPlayerAppUI.jpeg" width="250"/>
+<img src="./MediaPlayerAppUI.jpeg" width="250"/>
 </div>
 
 ---
@@ -73,7 +73,7 @@ MAD_Assignment/
 ✔ Proximity Sensor
 
 <div align="center">
-<img src="./SensorApp/SendorAppUI.jpeg" width="250"/>
+<img src="./SendorAppUI.jpeg" width="250"/>
 </div>
 
 ---
@@ -86,7 +86,7 @@ MAD_Assignment/
 ✔ Delete with confirmation
 
 <div align="center">
-<img src="./PhotoGalleryApp/PhotoGalleryAppUI.jpeg" width="250"/>
+<img src="./PhotoGalleryAppUI.jpeg" width="250"/>
 </div>
 
 ---
@@ -95,10 +95,10 @@ MAD_Assignment/
 
 <div align="center">
 
-<img src="./CurrencyConverter/CurrencyConverterUI.jpeg" width="200"/>
-<img src="./MediaPlayerApp/MediaPlayerAppUI.jpeg" width="200"/>
-<img src="./SensorApp/SendorAppUI.jpeg" width="200"/>
-<img src="./PhotoGalleryApp/PhotoGalleryAppUI.jpeg" width="200"/>
+<img src="./CurrencyConverterUI.jpeg" width="200"/>
+<img src="./MediaPlayerAppUI.jpeg" width="200"/>
+<img src="./SendorAppUI.jpeg" width="200"/>
+<img src="./PhotoGalleryAppUI.jpeg" width="200"/>
 
 </div>
 
