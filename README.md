@@ -1,15 +1,67 @@
+<div align="center">
+
+# 📱 Mobile Application Development (MAD) Assignment
+
+## 👨‍💻 Vishesh Gupta
+
+B.Tech CSE-7 (2024–28)
+Roll No: 240692
+
+### 👨‍🏫 Faculty: Mr. Gautam Gupta
+
+</div>
+
+---
+
+## 📌 Overview
+
+This repository contains **4 Android applications** developed as part of the **Mobile Application Development (CSE3709)** course.
+
+Each project demonstrates practical implementation of:
+
+* 📱 UI/UX Design
+* 🎵 Media Handling
+* 📡 Sensor Integration
+* 📂 Storage & File Management
+* 🔐 Permissions Handling
+
+---
+
+## 📂 Repository Structure
+
+<pre>
+MAD_Assignment/
+│  
+├── CurrencyConverter/  
+├── MediaPlayerApp/  
+├── SensorApp/  
+├── PhotoGalleryApp/  
+</pre>
+
+---
+
 ## 🚀 Projects & Detailed Description
 
 ---
 
 ### 💱 Currency Converter App
 
-This application provides **real-time currency conversion** between major international currencies including **INR, USD, EUR, and JPY**. It is designed with a clean and intuitive UI that enhances user experience.
+This application provides **real-time currency conversion** between major international currencies including **INR, USD, EUR, and JPY**.
 
-🔹 Users can input any value and instantly see converted amounts across all supported currencies.
-🔹 Includes a **Dark Mode / Light Mode toggle**, improving usability in different lighting conditions.
-🔹 Uses structured layouts and responsive UI components for smooth interaction.
-🔹 Focuses on **UI/UX design principles**, data handling, and dynamic updates.
+🔹 Features:
+
+* Convert values instantly between currencies
+* Supports multiple currencies
+* **Dark Mode / Light Mode toggle**
+* Clean and modern UI design
+* Smooth and responsive user experience
+
+🔹 Concepts Used:
+
+* UI Design (XML)
+* Event Handling
+* Dynamic Data Update
+* Theme Switching
 
 <div align="center">
 
@@ -24,13 +76,26 @@ This application provides **real-time currency conversion** between major intern
 
 ### 🎵 Media Player App
 
-This application is a **complete multimedia player** that allows users to play both **audio and video content** efficiently.
+This is a **multimedia player application** that supports both **audio and video playback**.
 
-🔹 Users can **import media files from device storage** or stream content using a **URL link**.
-🔹 Provides full playback controls including **Play, Pause, Stop, and Restart**.
-🔹 Displays playback progress using a **seek bar for better control**.
-🔹 Handles both offline and online media, showcasing **media APIs and streaming concepts**.
-🔹 Built with a structured UI for easy navigation and seamless interaction.
+🔹 Features:
+
+* Import media files from device
+* Stream media using URL
+* Playback controls:
+
+  * ▶️ Play
+  * ⏸ Pause
+  * ⏹ Stop
+  * 🔄 Restart
+* Seek bar for progress tracking
+
+🔹 Concepts Used:
+
+* MediaPlayer API
+* VideoView
+* File Handling
+* Streaming (URL-based playback)
 
 <div align="center">
 
@@ -45,17 +110,26 @@ This application is a **complete multimedia player** that allows users to play b
 
 ### 📡 Sensor App
 
-This application demonstrates the use of **hardware sensors available in Android devices** and displays real-time sensor data.
+This application demonstrates the use of **mobile hardware sensors** and displays real-time data.
 
-🔹 Integrates multiple sensors including:
-• **Accelerometer** (measures motion in X, Y, Z axes)
-• **Light Sensor** (detects ambient light intensity in lux)
-• **Proximity Sensor** (detects nearby objects)
+🔹 Sensors Used:
 
-🔹 Displays **live sensor readings dynamically**.
-🔹 Shows calculated values like **magnitude of acceleration**.
-🔹 Helps understand **interaction between software and device hardware**.
-🔹 Useful for learning **sensor APIs and real-time data updates**.
+* Accelerometer (X, Y, Z axis motion)
+* Light Sensor (lux measurement)
+* Proximity Sensor (distance detection)
+
+🔹 Features:
+
+* Real-time sensor data display
+* Shows acceleration magnitude
+* Clean card-based UI
+* Live updates
+
+🔹 Concepts Used:
+
+* SensorManager
+* SensorEventListener
+* Real-time data processing
 
 <div align="center">
 
@@ -67,19 +141,27 @@ This application demonstrates the use of **hardware sensors available in Android
 
 ### 📸 Photo Gallery App
 
-This application is a fully functional **photo management system** that allows users to capture, store, and manage images efficiently.
+This application is a **complete photo management system** for capturing and organizing images.
 
-🔹 Users can **capture images using the device camera**.
-🔹 Allows selection of a **custom storage folder**.
-🔹 Displays images in a **grid-based gallery layout**.
-🔹 Provides detailed information about each image including:
-• File name
-• Path
-• Size
-• Date captured
+🔹 Features:
 
-🔹 Includes functionality to **delete images with confirmation dialog**.
-🔹 Demonstrates **file handling, storage permissions, and media management** in Android.
+* Capture images using camera
+* Select custom storage folder
+* View images in grid format
+* Image details:
+
+  * Name
+  * Path
+  * Size
+  * Date
+* Delete images with confirmation
+
+🔹 Concepts Used:
+
+* Camera API
+* Storage Permissions
+* File Handling
+* RecyclerView / Grid Layout
 
 <div align="center">
 
@@ -93,3 +175,72 @@ This application is a fully functional **photo management system** that allows u
 </div>
 
 ---
+
+## 🖼️ All UI Screens (Quick Overview)
+
+<div align="center">
+
+<img src="./CurrencyConverter/CurrencyConverterUI.jpeg" width="150"/>
+<img src="./MediaPlayerApp/MediaPlayerAppUI.jpeg" width="150"/>
+<img src="./SensorApp/SendorAppUI.jpeg" width="150"/>
+<img src="./PhotoGalleryApp/PhotoGalleryAppUI.jpeg" width="150"/>
+
+</div>
+
+---
+
+## 🛠️ Technologies Used
+
+<div align="center">
+
+Java • Kotlin • Android Studio • XML • Android SDK
+Media APIs • Sensor APIs • Storage & Permissions
+
+</div>
+
+---
+
+## ⚙️ How to Run
+
+<pre>
+git clone https://github.com/visheshgupta0404/MAD_Assignment.git
+</pre>
+
+1. Open project in **Android Studio**
+2. Select any application module
+3. Click **Run ▶️**
+4. Install on emulator or physical device
+
+---
+
+## 📊 Features Summary
+
+<div align="center">
+
+| Project            | Key Concepts         |
+| ------------------ | -------------------- |
+| Currency Converter | UI, Theme Switching  |
+| Media Player       | Audio/Video Handling |
+| Sensor App         | Hardware Sensors     |
+| Photo Gallery      | Camera, Storage      |
+
+</div>
+
+---
+
+## 📎 Submission Info
+
+* Subject: Mobile Application Development (CSE3709)
+* Assignment Type: Graded Assignment
+* Total Projects: 4
+
+---
+
+<div align="center">
+
+## 🎯 Final Note
+
+This repository showcases practical Android development skills
+and serves as both an academic submission and a portfolio project 🚀
+
+</div>
